@@ -38,3 +38,6 @@ captures/
 
 # Keystore files
 *.jks
+
+# firebase json file
+google-services.json

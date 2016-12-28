@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.avinash.myauth.Splash"
+    android:background="@android:color/holo_blue_dark">
+
+    <Button
+        android:text="Sign Up"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bsignup"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:background="@color/common_google_signin_btn_text_dark_focused"
+        android:textStyle="bold" />
+
+    <Button
+        android:text="Login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/blogin"
+        android:background="@color/common_google_signin_btn_text_dark_default"
+        android:textColor="@android:color/holo_blue_dark"
+        android:layout_above="@+id/bsignup"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="16dp"
+        android:textStyle="normal|bold" />
+
+    <TextView
+        android:text="Welcome to"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="81dp"
+        android:id="@+id/textView2"
+        android:gravity="center_horizontal"
+        android:textStyle="bold"
+        android:textSize="24sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="23dp"
+        android:id="@+id/textView3"
+        tools:text="@string/app_name"
+        android:textSize="30sp"
+        android:textStyle="bold|italic"
+        android:text="@string/app_name" />
+</RelativeLayout>

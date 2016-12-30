@@ -56,4 +56,15 @@
         android:textSize="30sp"
         android:textStyle="bold|italic"
         android:text="@string/app_name" />
+
+    <Button
+        android:text="Login Django"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/blogin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="14dp"
+        android:id="@+id/b_test"
+        android:background="@android:color/holo_red_light"
+        android:textStyle="bold" />
 </RelativeLayout>

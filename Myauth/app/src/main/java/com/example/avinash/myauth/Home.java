@@ -28,7 +28,7 @@ public class Home extends AppCompatActivity {
         MobileAds.initialize(getApplicationContext(), "ca-app-pub-8102250900868414~5134965287");
 
         AdView mAdView = (AdView) findViewById(R.id.adView);
-        AdRequest adRequest = new AdRequest.Builder().build();
+        AdRequest adRequest = new AdRequest.Builder().addTestDevice("5345812C0F65DC12FBD0952C06EDEE51").build();
         mAdView.loadAd(adRequest);
         b_signout = (Button) findViewById(R.id.b_signout);
         mAuthListener = new FirebaseAuth.AuthStateListener() {

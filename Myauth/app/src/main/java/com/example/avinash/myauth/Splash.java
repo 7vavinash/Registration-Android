@@ -15,7 +15,7 @@ public class Splash extends AppCompatActivity {
     private FirebaseAuth mAuth;
     private FirebaseAuth.AuthStateListener mAuthListener;
 
-    Button blogin, bsignup, b_test;
+    Button blogin, bsignup, b_login_django, b_login_node;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,7 +24,8 @@ public class Splash extends AppCompatActivity {
 
         blogin = (Button) findViewById(R.id.blogin);
         bsignup = (Button) findViewById(R.id.bsignup);
-        b_test = (Button) findViewById(R.id.b_test);
+        b_login_django = (Button) findViewById(R.id.b_login_django);
+        b_login_node = (Button) findViewById(R.id.b_login_node);
 
         blogin.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -44,10 +45,18 @@ public class Splash extends AppCompatActivity {
             }
         });
 
-        b_test.setOnClickListener(new View.OnClickListener() {
+        b_login_django.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent i = new Intent(Splash.this, Login_DjangoActivity.class);
+                startActivity(i);
+                finish();
+            }
+        });
+        b_login_node.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(Splash.this, Login_NodeActivity.class);
                 startActivity(i);
                 finish();
             }

@@ -64,7 +64,18 @@
         android:layout_above="@+id/blogin"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="14dp"
-        android:id="@+id/b_test"
+        android:id="@+id/b_login_django"
         android:background="@android:color/holo_red_light"
+        android:textStyle="bold" />
+
+    <Button
+        android:text="Login Node"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/b_login_django"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="11dp"
+        android:id="@+id/b_login_node"
+        android:background="@android:color/holo_green_light"
         android:textStyle="bold" />
 </RelativeLayout>
